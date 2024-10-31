@@ -16,7 +16,8 @@ def validUTF8(data):
         # Mask the byte to get the last 8 bits
         byte &= 0xFF
 
-        # If no bytes are expected, determine how many bytes this character requires
+        """ If no bytes are expected, determine how many bytes
+        this character requires"""
         if num_bytes == 0:
             if (byte >> 7) == 0b0:  # 1-byte character (ASCII)
                 continue
