@@ -1,4 +1,20 @@
 #!/usr/bin/python3
+"""
+Island Perimeter Module
+
+This module provides a function to calculate the perimeter of an island represented
+in a 2D grid. The grid is a rectangular list of lists where:
+- 0 represents water
+- 1 represents land
+
+The function adheres to the following assumptions:
+- Each cell is square with a side length of 1.
+- Cells are connected horizontally or vertically (not diagonally).
+- The grid is completely surrounded by water.
+- There is only one island (or none).
+- The island does not have lakes (water completely surrounded by land).
+"""
+
 def island_perimeter(grid):
     """
     Calculate the perimeter of the island described in grid.
